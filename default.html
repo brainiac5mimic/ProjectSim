@@ -1,0 +1,137 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Foundation | Welcome</title>
+
+<link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+<link rel="stylesheet" href="styleSheet.css">
+
+ 
+</head>
+<body>
+ 
+<div class="top-bar">
+<div class="top-bar-left">
+<ul class="menu">
+<li class="menu-text">Experiments</li>
+<li><a href="default.html">Main Page</a></li>
+<li>
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">  One     </button>
+  <div id="myDropdown" class="dropdown-content">
+  
+    <a href="zLightReflex_info.html">Page 1</a>
+    <a href="zLightReflexSelfTest.html">Page 2</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
+</li>
+
+<li>
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">  Two  </button>
+  <div id="myDropdown" class="dropdown-content">
+  
+    <a href="zInfoOnBioTable.html">Page 1</a>
+    <a href="zBioInput.php">Page 2</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
+</li>
+
+<li>
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">  Three     </button>
+  <div id="myDropdown" class="dropdown-content">
+  
+   <a href="zMilgramExperimentInput.php">Page 1</a>
+    <a href="zMilgramExperimentAbout.html">Page 2</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+ 
+ 
+ 
+ 
+ 
+<div class="callout large primary">
+<div class="row column text-center">
+<h1>Physics Simulation</h1>
+<h2 class="subheader"> You decide the result </h2>
+</div>
+</div>
+ 
+<div class="row medium-8 large-7 columns">
+<div class="blog-post">
+<h3>Experiment overviews <small>5/16/2016</small></h3>
+<img class="thumbnail" src="">
+<p>
+
+</p>
+<div class="callout">
+<ul class="menu simple">
+<li><a href="#">Author: </a></li>
+<!-- <li><a href="#">Comments: 3</a></li> -->
+</ul>
+</div>
+</div>
+
+
+
+
+<!-- 
+
+<div class="blog-post">
+<h3>Awesome blog post title <small>3/6/2015</small></h3>
+<img class="thumbnail" src="http://placehold.it/850x350">
+<p>
+
+</p>
+<div class="callout">
+<ul class="menu simple">
+<li><a href="#">Author: Mike Mikers</a></li>
+<li><a href="#">Comments: 3</a></li>
+</ul>
+</div>
+</div>
+
+ -->
+ 
+ 
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+
+<script>
+      $(document).foundation();
+    </script>
+<script>
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</body>
+</html>
